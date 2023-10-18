@@ -4,7 +4,7 @@ let button;
 let timer = 0;
 let keepShowingImage = false;
 let state = 1;
-let myURLs = ["https://i.pinimg.com/474x/6e/36/04/6e360403267c3137b97be396832e61d4.jpg","https://i.pinimg.com/originals/e0/6e/91/e06e912bf52798e643bbe09032ff6eaf.jpg","https://pbs.twimg.com/media/E3iZ7FpX0AEcqt_.jpg"];
+let myURLs = ["https://i.pinimg.com/474x/6e/36/04/6e360403267c3137b97be396832e61d4.jpg","https://i.pinimg.com/originals/e0/6e/91/e06e912bf52798e643bbe09032ff6eaf.jpg","https://pbs.twimg.com/media/E3iZ7FpX0AEcqt_.jpg","https://theracecardproject.com/wp-content/uploads/2016/03/Skeleton-B05.jpg",];
 
 
 // function preload() {
@@ -14,8 +14,7 @@ let myURLs = ["https://i.pinimg.com/474x/6e/36/04/6e360403267c3137b97be396832e61
 function setup() {
   noCanvas();
 
-  
-  img = createImg("https://i.pinimg.com/474x/6e/36/04/6e360403267c3137b97be396832e61d4.jpg")
+  img = createImg( myURLs[ floor(random(4)) ] )
   createInput();
   
   button = createButton("Submit");
